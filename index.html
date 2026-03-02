@@ -2,13 +2,108 @@ Enter file contents here
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu primeiro site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyktoril</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #8B0000, #FF0000);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
+</style>
+
 </head>
 <body>
 
-    <h1>Olá, mundo!</h1>
-    <p>Esse é meu primeiro site no GitHub Pages.</p>
+<header>
+  <div class="logo">Vyktoril</div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Vyktoril</h1>
+    <p>Transformando ideias em experiências digitais modernas e únicas</p>
+  </div>
+</section>
 
 </body>
 </html>
